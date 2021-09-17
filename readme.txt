@@ -54,6 +54,8 @@ d_max.txt:
 diesel buses required to cover all trips in set T in absence of an electric vehicle fleet
 
 initial_SoC_levels.csv:
-- it has only 1 line, listing the initial SoC levels (e_i) for 100 electric vehicles
-- for an instance with |V_0| electric vehicles available, the first |V_0| values should be retrieved
+- the first line is a header denoting the only parameter listed for each electric vehicle (e_i)
+- the next 100 lines (one per electric vehicle), lists the initial SoC level of bus i (e_i)
+- for an instance with |V_0| electric vehicles available, the first |V_0| lines (excluding the header)
+ should be retrieved
 
